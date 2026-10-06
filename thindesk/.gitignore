@@ -1,0 +1,26 @@
+# Maven / build
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+nbproject/private/
+nb-configuration.xml
+
+# SO
+.DS_Store
+Thumbs.db
+
+# Credenciais — NUNCA versionar (Fase 21 do plano)
+.env
+atlas-credentials.env
+*credentials*.env
+application-local.properties
+application-secret.properties
+
+# Logs
+*.log

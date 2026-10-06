@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head><meta charset="UTF-8"><title>Meu Perfil</title></head>
+<body>
+<h2>Meu Perfil</h2>
+<p>E-mail: <span sec:authentication="name"></span></p>
+<p>Papel: <span sec:authentication="authorities"></span></p>
+<a th:href="@{/dashboard}">Voltar</a>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Administração</title></head>
+<body>
+<h2>Painel do Administrador</h2>
+<table border="1">
+  <tr><th>Nome</th><th>E-mail</th><th>Perfil</th><th>Ativo</th></tr>
+  <tr th:each="u : ${usuarios}">
+    <td th:text="${u.nome}"></td><td th:text="${u.email}"></td>
+    <td th:text="${u.perfil}"></td><td th:text="${u.ativo}"></td>
+  </tr>
+</table>
+<a th:href="@{/dashboard}">Voltar</a>
+</body>
+</html>

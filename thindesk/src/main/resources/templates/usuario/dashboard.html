@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head><meta charset="UTF-8"><title>Dashboard</title></head>
+<body>
+<h2>Dashboard</h2>
+<p>Bem-vindo, <span sec:authentication="name">usuário</span>!</p>
+<nav>
+  <a th:href="@{/}">Início</a> |
+  <a th:href="@{/perfil}">Meu Perfil</a> |
+  <span sec:authorize="hasAnyRole('GERENTE','ADMINISTRADOR')"><a th:href="@{/ajustes-horarios}">Área do Gerente</a> |</span>
+  <span sec:authorize="hasRole('ADMINISTRADOR')"><a th:href="@{/administrador/painel}">Administração</a> |</span>
+  <form th:action="@{/logout}" method="post" style="display:inline"><button type="submit">Sair</button></form>
+</nav>
+</body>
+</html>
