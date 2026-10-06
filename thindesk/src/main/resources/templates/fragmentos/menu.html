@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<body>
+<!-- Menu lateral exibido conforme o perfil (Fase 17 do plano). -->
+<div th:fragment="menu" class="menu-lateral p-3">
+  <ul class="nav flex-column gap-1">
+    <li class="nav-item"><a class="nav-link" th:href="@{/}"><i class="bi bi-house"></i> Início</a></li>
+    <li class="nav-item"><a class="nav-link" th:href="@{/dashboard}"><i class="bi bi-grid"></i> Dashboard</a></li>
+    <li class="nav-item"><a class="nav-link" th:href="@{/perfil}"><i class="bi bi-person"></i> Meu Perfil</a></li>
+    <li class="nav-item"><a class="nav-link" th:href="@{/chamados}"><i class="bi bi-headset"></i> Chamados</a></li>
+    <li class="nav-item"><a class="nav-link" th:href="@{/clientes}"><i class="bi bi-people"></i> Clientes</a></li>
+    <li class="nav-item" sec:authorize="hasAnyRole('GERENTE','ADMINISTRADOR')">
+      <a class="nav-link" th:href="@{/gerente/painel}"><i class="bi bi-briefcase"></i> Área do Gerente</a>
+    </li>
+    <li class="nav-item" sec:authorize="hasAnyRole('GERENTE','ADMINISTRADOR')">
+      <a class="nav-link" th:href="@{/ajustes-horarios}"><i class="bi bi-alarm"></i> Horários</a>
+    </li>
+    <li class="nav-item" sec:authorize="hasRole('ADMINISTRADOR')">
+      <a class="nav-link" th:href="@{/administrador/painel}"><i class="bi bi-shield-lock"></i> Administração</a>
+    </li>
+  </ul>
+</div>
+</body>
+</html>

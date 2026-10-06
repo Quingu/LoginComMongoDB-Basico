@@ -50,6 +50,11 @@ public class ControllerAutenticacao {
         return "usuario/perfil";
     }
 
+    @GetMapping("/gerente/painel")
+    public String painelGerente() {
+        return "gerente/painel";
+    }
+
     @GetMapping("/acesso-negado")
     public String acessoNegado() {
         return "erro/acesso-negado";

@@ -1,0 +1,16 @@
+/* Tema padrão do ThinDesk (Fase 19 do plano).
+   Para trocar o visual sem mexer na lógica: edite SÓ este arquivo
+   (ou crie outro em temas/ e aponte app.tema em application.properties). */
+:root {
+    --cor-primaria: #0d6efd;
+    --cor-primaria-escura: #0a58ca;
+    --cor-fundo: #f4f6fb;
+    --cor-barra: #1a2333;
+    --cor-barra-texto: #ffffff;
+    --cor-cartao: #ffffff;
+    --cor-texto: #212529;
+    --cor-texto-fraco: #6c757d;
+    --cor-sucesso: #198754;
+    --cor-perigo: #dc3545;
+    --fonte: "Segoe UI", system-ui, -apple-system, sans-serif;
+}

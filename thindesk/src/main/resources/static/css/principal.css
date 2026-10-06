@@ -1,0 +1,35 @@
+/* Estutura geral das páginas autenticadas. Usa SÓ variáveis do tema. */
+body {
+    font-family: var(--fonte);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.barra-topo {
+    background-color: var(--cor-barra);
+    color: var(--cor-barra-texto);
+}
+.barra-topo a, .barra-topo .navbar-brand { color: var(--cor-barra-texto); }
+.menu-lateral {
+    background-color: var(--cor-barra);
+    min-height: calc(100vh - 56px);
+}
+.menu-lateral .nav-link { color: var(--cor-barra-texto); opacity: .85; }
+.menu-lateral .nav-link:hover, .menu-lateral .nav-link.active {
+    opacity: 1; background-color: rgba(255,255,255,.12); border-radius: .375rem;
+}
+.conteudo { flex: 1; padding: 1.5rem; }
+.cartao {
+    background-color: var(--cor-cartao);
+    border-radius: .75rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,.08);
+    padding: 1.5rem;
+}
+.btn-primario {
+    background-color: var(--cor-primaria); border-color: var(--cor-primaria); color: #fff;
+}
+.btn-primario:hover { background-color: var(--cor-primaria-escura); border-color: var(--cor-primaria-escura); color: #fff; }
+.rodape { color: var(--cor-texto-fraco); font-size: .875rem; padding: 1rem 0; text-align: center; }
+.texto-fraco { color: var(--cor-texto-fraco); }

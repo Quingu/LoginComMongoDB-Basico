@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<body>
+<!-- Barra superior das páginas autenticadas (Fase 16 do plano). -->
+<nav th:fragment="cabecalho" class="navbar navbar-expand barra-topo px-3">
+  <a class="navbar-brand d-flex align-items-center gap-2" th:href="@{/dashboard}">
+    <img th:src="@{/images/logo.png}" alt="ThinDesk" width="32" height="32">
+    <strong>ThinDesk</strong>
+  </a>
+  <div class="ms-auto d-flex align-items-center gap-3">
+    <span class="d-none d-md-inline"><i class="bi bi-person-circle"></i> <span sec:authentication="name">usuário</span></span>
+    <span class="badge bg-light text-dark" sec:authentication="authorities">ROLE</span>
+    <form th:action="@{/logout}" method="post" class="m-0">
+      <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
+      <button type="submit" class="btn btn-sm btn-outline-light"><i class="bi bi-box-arrow-right"></i> Sair</button>
+    </form>
+  </div>
+</nav>
+</body>
+</html>

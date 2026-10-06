@@ -1,0 +1,4 @@
+/* Painéis (dashboard, gerente, administrador). */
+.painel-cartao { transition: transform .12s ease-in-out; }
+.painel-cartao:hover { transform: translateY(-3px); }
+.painel-icone { font-size: 2rem; color: var(--cor-primaria); }

@@ -1,0 +1,16 @@
+/* Tema alternativo preparado para o PFC (Fase 19 do plano).
+   Mesmas variáveis do padrao.css — a lógica e o HTML não mudam,
+   só cores/fontes. Ative com: app.tema=pfc em application.properties. */
+:root {
+    --cor-primaria: #147a4d;
+    --cor-primaria-escura: #0d5a39;
+    --cor-fundo: #eef4f0;
+    --cor-barra: #10241b;
+    --cor-barra-texto: #eaf5ee;
+    --cor-cartao: #ffffff;
+    --cor-texto: #1c2b23;
+    --cor-texto-fraco: #5f7a6b;
+    --cor-sucesso: #147a4d;
+    --cor-perigo: #b3261e;
+    --fonte: "Segoe UI", system-ui, -apple-system, sans-serif;
+}

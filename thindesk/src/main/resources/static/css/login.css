@@ -1,0 +1,15 @@
+/* Página de login. */
+.login-fundo {
+    min-height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte);
+}
+.login-cartao {
+    width: 100%; max-width: 420px;
+    background-color: var(--cor-cartao);
+    border-radius: 1rem;
+    box-shadow: 0 6px 24px rgba(0,0,0,.12);
+    padding: 2rem;
+}
+.login-logo { width: 96px; height: auto; margin-bottom: 1rem; }

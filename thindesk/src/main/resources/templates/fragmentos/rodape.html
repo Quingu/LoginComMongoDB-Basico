@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<!-- Rodapé reutilizável (Fase 16 do plano). -->
+<footer th:fragment="rodape" class="rodape">
+  <span>ThinDesk — Sistema de Login Seguro (PFC) · <span th:text="${#dates.format(#dates.createNow(),'yyyy')}">2026</span></span>
+</footer>
+</body>
+</html>

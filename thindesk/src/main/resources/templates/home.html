@@ -1,6 +1,10 @@
-<div class="container-fluid vh-100 d-flex justify-content-center align-items-center" th:fragment="content">
-    <div class="text-center">
-        <h1>Bem-vindo ao</h1>
-        <img th:src="@{/images/logo.png}" alt="Logo" width="500" height="500">
-    </div>
+<div class="text-center py-4" th:fragment="content" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+  <h1>Bem-vindo ao ThinDesk</h1>
+  <img th:src="@{/images/logo.png}" alt="Logo" width="220" height="220">
+  <p style="color:var(--cor-texto-fraco)">Logado como <strong sec:authentication="name">usuário</strong>
+    <span class="badge bg-secondary" sec:authentication="authorities"></span></p>
+  <div class="d-flex gap-2 justify-content-center flex-wrap">
+    <a th:href="@{/dashboard}" class="btn btn-primario">Ir ao dashboard</a>
+    <a th:href="@{/chamados}" class="btn btn-outline-secondary">Chamados</a>
+  </div>
 </div>

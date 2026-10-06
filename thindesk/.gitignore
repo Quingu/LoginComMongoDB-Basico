@@ -24,3 +24,5 @@ application-secret.properties
 
 # Logs
 *.log
+src/main/resources/application.properties
+thindesk/src/main/resources/application.properties
