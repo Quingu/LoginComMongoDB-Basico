@@ -26,6 +26,13 @@ A aplicação permite:
 
 ---
 
+
+## Objetivo
+
+O ThinDesk busca fornecer uma base de sistema de atendimento técnico com autenticação, autorização, gerenciamento de chamados e persistência em MongoDB, servindo também como projeto de estudo para desenvolvimento web com **Spring Boot, Spring Security, MongoDB e Thymeleaf**.
+
+---
+
 ## Tecnologias utilizadas
 
 ### Backend
@@ -996,7 +1003,3 @@ src/test/
 **Grupo:** `com.pfc`
 
 ---
-
-## Objetivo
-
-O ThinDesk busca fornecer uma base de sistema de atendimento técnico com autenticação, autorização, gerenciamento de chamados e persistência em MongoDB, servindo também como projeto de estudo para desenvolvimento web com **Spring Boot, Spring Security, MongoDB e Thymeleaf**.
